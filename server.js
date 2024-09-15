@@ -18,7 +18,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-// Set static folder
+// setting a static directory
 app.use(express.static(path.join(__dirname, "public")));
 
 const botName = "ChatCord Bot";
@@ -30,7 +30,7 @@ const botName = "ChatCord Bot";
   io.adapter(createAdapter(pubClient, subClient));
 })();
 
-// Run when client connects
+// listen for the client connection
 io.on("connection", (socket) => {
   console.log(io.of("/").adapter);
   socket.on("joinRoom", ({ username, room }) => {

@@ -10,11 +10,14 @@
   "author": "abeer",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.21.0",
-    "moment": "^2.30.1",
-    "socket.io": "^4.7.5"
+    "@socket.io/redis-adapter": "^7.1.0",
+    "dotnev": "^14.3.2",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "redis": "^4.0.2",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^2.0.2"
   }
 }
